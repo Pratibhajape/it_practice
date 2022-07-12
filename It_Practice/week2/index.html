@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>create new accout</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="t4.jfif" height="655px" width="355px">
+            </div>
+            <div class="col" style="margin-top: auto ; margin-bottom: auto">
+            <form class="form-group" onsubmit="account()">
+            <p class="h1">create a new account</p>
+                        <label class="form-label">Email:</label>
+                        <input  required class="form-control" id="email" type="text" name="email" placeholder="Enter your email:"/><br>
+                        <label class="form-label">Password:</label>
+                        <input  required class="form-control" id="password" type="password" name="password" placeholder="Enter your password:"/><br>
+                        <label class="form-label">Student name:</label>
+                        <input  required class="form-control" id="student_name" type="text" name="student_name" placeholder="Enter student name:"/><br>
+                        <label class="form-label">College name :</label>
+                        <input  required class="form-control" id="college_name" type="text" name="college _name" placeholder="Enter college name:"/><br>
+                        <label class="form-label">Branch:</label>
+                        <input  required class="form-control" id="branch" type="text" name="branch" placeholder="Enter your branch:"/><br>
+                        <label  class="form-label">Phone number:</label>
+                        <input  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        type = "number" maxlength = "10" required class="form-control" id="phone_number" type="number"  name="phone_number" placeholder="Enter your phone number:"/><br>
+                        <label class="form-label">Address:</label>
+                        <input required  class="form-control" id="address" type="text" name="address" placeholder="Enter your address:"><br>
+                        <button class="btn btn-danger" type="submit" >submit</button>
+                </form>    
+                <script src='main.js'></script>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
