@@ -1,41 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Task 5</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <link rel='stylesheet' href='style.css'> 
-    <script src='main.js'></script>
-</head>
-<body style="background-color:blue">
-    <h1>Adding and removing list items</h1>
-    <form>
-        <input required type="text" name="text" id="txt">
-        <button type="submit" class="btn-list" style="background-color: aqua">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-        </button>
-    </form> 
-    <div class="container">
-       <ul>
-        <!-- <li>Dev AT</li>
-        <li>Dev AT</li>
-        <li>Dev AT</li>
-        <li>Dev AT</li>
-        <li>Dev AT</li> -->
-        </ul>
-    </div>
-    <script>
-        const inputText = document.querySelector('#')
-        const myButton = document.querySelector('.btn=list');
-        const list = document.querySelector('click',(e)=>{
-            if(inputText.value !=""){
-                e.preventDefault();
-            }
+    <head>
+        </head>
+        <body>
+            
+            <input type="text" name="text" id="new_data">
+            <br>
+            <button type="submit" onclick="add_data()">click here to add data</button>
 
-            )
-        });
-    </script>
-</body>
+            <div>
+                <ul id="unordered_list">
+                        <li id="first_list_item">Default Item</li>
+                </ul>
+            </div>
+            <script src="main.js"></script>
+        </body>
+    
 </html>
