@@ -1,3 +1,4 @@
+
 function add_data(){
     var data = document.getElementById("new_data").value;
     console.log(data);
@@ -5,4 +6,4 @@ function add_data(){
     item.innerText = data;
     document.getElementById("unordered_list").appendChild(item);
     console.log("append successfully")
-}
+  }
